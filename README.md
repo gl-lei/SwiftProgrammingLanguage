@@ -1,6 +1,8 @@
 # SwiftProgrammingLanguage
 The Swift Programming Language's Translation For Chinese
 
+Swift编程语言翻译
+
 #### 第一章：基础知识
 1. 基本类型(`Int`、`Double`、`Float`、`Bool`、`String`、`Array`、`Set`、`Dictionary`)
 2. 常量和变量(`let`、`var`)
