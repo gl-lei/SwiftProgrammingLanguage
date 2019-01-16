@@ -245,7 +245,7 @@ if let airportName = airports["DUB"] {
 airports["APL"] = "Apple International"
 airports["APL"] = nil
 
-//还可以使用removeValueForKey(_:)方法来移除指定的键值对，方法返回旧值。
+//还可以使用removeValue(forKey:)方法来移除指定的键值对，方法返回旧值。
 if let removedValue = airports.removeValue(forKey: "DUB") {
     print("The removed airport's name is \(removedValue).")
 } else {

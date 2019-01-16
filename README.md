@@ -48,3 +48,29 @@ Swift编程语言翻译
 10. 字符串的比较(`==`、`!=`、`hasPrefix(_:)`、`hasSuffix(_:)`)
 11. 字符串的 Unicode 表示形式(`utf8`、`utf16`、`unicodeScalars`)
 12. Unicode 和 UTF8、UTF16 的区别(Unicode 是编码标准，UTF8 和 UTF16 是具体的 Unicode 编码标准实现)
+
+#### 第四章：容器类型
+1. swift 中的集合类型(Array、Set、Dictionary)
+2. 数组的创建(`Array<T>` 或者 `[T]`)(`[Int]()`、`[Double](repeating: 0.0, count: 3)`)
+3. 数组的合并(`+`)
+4. 数组的访问和修改(`count`、`isEmpty`、`append(_:)`、`+=`、`[0]`、`[4...6]`、`insert(_:at:)`、`remove(at:)`、`removeLast()`)
+5. 数组的遍历(`for in`、`enumerated()`)
+6. 集合类型(hashable)
+7. 集合的创建(`Set<T>()`)
+8. 集合元素的访问和修改(`count`、`isEmpty`、`insert(_:)`、`remove(_:)`、`removeAll()`、`contains(_:)`)
+9. 集合的遍历(`for in`、`sorted()`)
+10. 集合的操作方法(`intersection(_:)`、`symmectricDifference(_:)`、`union(_:)`、`subtracting(_:)`)
+11. 集合的子集以及相等判断(`isSubsetOf(_:)`、`isSuperSetOf(_:)`、`isStrictSubsetof(_:)`、`isStrictSupersetOf(_:)`、`isDisjoinWith(_:)`)
+12. 字典的初始化(`Dictionary<Key, Value>()`、`[Key: Value]()`)
+13. 字典的访问以及修改(`count`、`isEmpty`、下标操作、value 赋值为 `nil` 来移除元素、`updateValue(_:forKey:)`、`removeValue(forKey:)`)
+14. 字典的遍历(`for in`、`keys`、`values`)
+
+#### 第五章：流程控制
+1. `for in` 循环
+2. 间断跳跃循环：`stride(from:to:by:)`、`stride(from:through:by:)`
+3. `while`、`repeat-while` 循环
+4. if、switch 条件语句(没有隐式的 fallthrough、不需要写 break、间隔匹配、元组匹配、值绑定、where 条件、复合 case)
+5. continue、break、fallthrough、return、throw
+6. labeled statements
+7. guard 语句
+8. 检测 API 的可用性(`if #available(iOS 9, macOS 10.10, *) {}`)
