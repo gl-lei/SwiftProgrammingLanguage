@@ -47,6 +47,12 @@ if name == "world" {
     print("I'm sorry \(name), but I dont't recognize you")
 }
 
+//元组如果拥有的类型一样并且数量也一样的话，也可以进行比较。比较准则是从左往右依次进行比较。
+("blue", -1) < ("purple", 1)        // OK, evaluates to true
+("blue", false) < ("purple", true)  // Error because < can't compare Boolean values
+
+//注意，swift标准库要求元组的元素个数只有小于7个的时候才可以进行比较，大于或者等于7个的话则不能进行比较。我们只能自己实现比较方法来进行比较。
+
 //MARK: - Ternary Conditional Operator
 //三目运算符
 let contentHeight = 40
@@ -54,7 +60,7 @@ let hasHeader = true
 let rowHeight = contentHeight + (hasHeader ? 50 : 20)
 
 //MARK: - Nil Coalescing Operator
-//空合并运算符(a ?? b)用来解包optional变量a，如果a包含一个值，则返回解包后的值。如果a的值为nil，则返回b。表达式b必须与a所含值的类型一致。
+//空值解包合并运算符(a ?? b)用来解包optional变量a，如果a包含一个值，则返回解包后的值。如果a的值为nil，则返回b。表达式b必须与a所含值的类型一致。
 // a != nil ? a! : b        如果a的值不为nil，则b表达式不会进行计算。
 
 //MARK: - Range Operators
@@ -73,7 +79,7 @@ for i in 0..<count {
     print("Person \(i + 1) is called \(names[i])")
 }
 
-//半开运算符
+//单边范围运算符
 for name in names[2...] {
     print(name)
 }
