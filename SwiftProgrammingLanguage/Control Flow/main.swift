@@ -9,7 +9,7 @@
 import Foundation
 
 //Swift提供了类似C语言形式的流程控制语句，包括：for、while循环，if、guard、switch条件表达式，break、continue流程流向改变语句。
-//Swift的switch语句比C语言的switch语句更加完善、强大。C语言中的switch语句中，如果case条件中缺少了break，则会发生“fall through”现象，Swift中不会产生这种现象。此外，case还能匹配不同的模式(where)。
+//Swift的switch语句比C语言的switch语句更加完善、强大。C语言中的switch语句中，如果case条件中缺少了break，则会发生"fall through"现象，Swift中不会产生这种现象。此外，case还能匹配不同的模式(where)。
 
 //MARK: - For Loops
 //Swift提供了两种类型的循环：for-in与for
@@ -192,7 +192,7 @@ default:
 print(description)
 
 //MARK: - Labeled Statements
-//我们可以嵌套循环和条件表达式，有时候我们可能会想通过break终止某一个循环或者条件表示式，如果语句国语复杂的话我们就可以通过通过statement label来实现。
+//我们可以嵌套循环和条件表达式，有时候我们可能会想通过break终止某一个循环或者条件表示式，如果语句过于复杂的话我们就可以通过通过statement label来实现。
 var res = 30
 var square = 200
 gameLoop: while res != 100 {
