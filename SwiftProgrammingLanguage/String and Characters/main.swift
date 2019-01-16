@@ -164,8 +164,8 @@ for index in greeting.indices {
     print("\(greeting[index])")
 }
 
-//注意您可以在符合Collection协议的任何类型上使用startIndex和endIndex属性以及索引（before :)，
-//index（after :)和index（_：offsetBy :)方法。
+//注意您可以在符合Collection协议的任何类型上使用startIndex和endIndex属性以及索引(before:)，
+//index(after:)和index(_:offsetBy:)方法。
 //这包括String，如此处所示，以及集合类型，如Array，Dictionary和Set。
 
 //MARK: - Inserting and Removing
@@ -187,8 +187,8 @@ let range = wel.index(wel.endIndex, offsetBy: -6)..<wel.endIndex
 wel.removeSubrange(range)
 print(wel)
 
-//注意您可以在符合RangeReplaceableCollection协议的任何类型上使用insert（_：at :)，
-//insert（contentsOf：at :)，remove（at :)和removeSubrange（_ :)方法。
+//注意您可以在符合RangeReplaceableCollection协议的任何类型上使用insert(_:at:)，
+//insert(contentsOf:at:)，remove(at:)和removeSubrange(_:)方法。
 //这包括String，如此处所示，以及集合类型，如Array，Dictionary和Set。
 
 //MARK: - Substrings
@@ -233,7 +233,7 @@ if a1 != a2 {
 //注意，Swift中的字符串和字符的比较不是区域敏感的。
 
 //MARK: - Prefix and Suffix Equality
-//字符串前缀比较使用hasPrefix(_:)方法，后缀比较使用hasSuffix(_:)方法。同样遵循扩展字形集的规范等价比价。
+//字符串前缀比较使用hasPrefix(_:)方法，后缀比较使用hasSuffix(_:)方法。同样遵循扩展字形集的规范等价比较。
 let strT = "Good Choice"
 if strT.hasPrefix("Good") {
     print("\(strT) has the prefix \"Good\".")
