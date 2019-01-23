@@ -13,12 +13,12 @@ import Foundation
 //全局函数以及嵌套函数都是闭包的一种特殊形式。闭包有三种形式：
 //1. 全局函数是一种拥有名称但不持有任何变量的闭包。
 //2. 嵌套函数是一种拥有名称并且在作用域内持有变量的闭包。
-//3. 闭包表达式一种没有名称的、轻量级语法的、可以在作用域内持有变量的闭包。
+//3. 闭包表达式是一种没有名称的、轻量级语法的、可以在作用域内持有变量的闭包。
 
 //MARK: - Closure Expressions
 
 //MARK: - The Sorted Method
-//Swift标准库提供一个sorted(by:)方法，可以为一个数组里面的位置元素进行排序, 输出排序后的一个数组，数组顺序取决于我们提供的闭包实现。
+//Swift标准库提供一个sorted(by:)方法，可以为一个数组里面的所有元素进行排序, 输出排序后的一个数组，数组顺序取决于我们提供的闭包实现。
 let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
 func backwards(_ s1: String, _ s2: String) -> Bool {
     return s1 > s2
@@ -34,14 +34,16 @@ reversed = names.sorted(by: {(s1: String, s2: String) -> Bool in
 print("reversed: \(reversed).")
 
 //MARK: - Inferring Type From Context
-//根据上下文信息推断参数类型, 返回值类型
-reversed = names.sorted(by: {s1, s2 in
+//因为排序闭包作为参数传递给方法，swift可以推断出闭包的参数类型和返回值类型。在sorted(by:)方法中，参数必须是(String, String) -> Bool类型，所以(String, String)和Bool类型就可以省略掉。因为所有的类型都可以推断出来，所以返回箭头(->)也可以省略掉，参数两边的括号也可以省略掉：
+reversed = names.sorted(by: { s1, s2 in
     return s1 > s2
 })
 print("reversed: \(reversed).")
 
+//当闭包传递给函数或者方法的时候，总是可以推断出闭包的参数类型和返回值类型。因此，这种情况下我们就不需要写闭包的完整格式。
+
 //MARK: - Implicit Returns from Single-Expression Closures
-//一条语句的闭包可以隐式的返回语句结果
+//通过删除return关键字，单条语句的闭包可以隐式的返回表达式的结果
 reversed = names.sorted(by: {s1, s2 in s1 > s2})
 
 //MARK: - Shorthand Argument Names
@@ -55,7 +57,10 @@ reversed = names.sorted(by: >)
 print("reversed: \(reversed).")
 
 //MARK: - Trailing Closures
-//如果你需要传递一个闭包表达式给函数并且作为函数参数的最后一个参数，可能闭包表达式太长，这时候你就可以使用Trailing Closures来代替。Trailing Closure是一种特殊的闭包表达式，它写在函数参数列表的圆括号之后。使用Trailing Closures调用函数的时候，不能在闭包前面使用参数标签(argument label)
+//如果需要传递一个闭包表达式给函数并且作为函数的最后一个参数，但可能闭包表达式太长。这时候我们就可以使用Trailing Closures闭包形式。
+//Trailing Closure是一种特殊的闭包表达式，它写在函数参数列表的圆括号之后。
+//使用Trailing Closures调用函数的时候，不能在闭包前面使用参数标签(argument label)
+
 //定义一个函数
 func someFunctionThatTakesAClosure(closure: () -> Void) {
     //函数体
@@ -67,12 +72,13 @@ someFunctionThatTakesAClosure(closure: {
 })
 
 //使用Trailing Closure之后
-func someFunctionThatTakesAClosure(){
+func someFunctionThatTakesAClosure() {
     //闭包代码
 }
 
 reversed = names.sorted() {$0 > $1}
-//如果闭包表达式作为函数或者方法的唯一参数，并且你把闭包表达式作为trailing closure来写，则可以省略函数名或者方法名后的一对括号。
+
+//如果闭包表达式是函数或者方法的唯一参数，如果闭包采用trailing closure来写，则可以省略函数名或者方法名后的一对括号。
 reversed = names.sorted {$0 > $1}
 print("reversed: \(reversed).")
 
@@ -127,9 +133,9 @@ print(alsoIncrementByTen())
 
 
 //MARK: - Escaping Closures
-//当一个闭包作为函数的参数传递给函数，但是是在函数执行完之后才被调用，这样我们称这个闭包逃离了这个函数。当我们声明一个带有闭包参数的函数的时候，我们可以使用@escaping放到闭包参数名称的前面来表示这个闭包允许逃离。
+//当一个闭包作为函数的参数传递给函数，但是是在函数执行完之后才被调用(在函数体中没有调用闭包)，这样我们称这个闭包逃离了这个函数。当我们声明一个带有闭包参数的函数的时候，我们可以使用@escaping放在闭包参数名称的前面来表示这个闭包允许逃离。
 
-//Escaping Closure示例：（逃离的闭包，主要用在异步操作里面）
+//Escaping Closure示例：(逃离的闭包，主要用在异步操作里面)
 var completionHandlers: [() -> Void] = []
 func someFunctionWithEscapingClosure(completionHandler: @escaping () -> Void) {
     completionHandlers.append(completionHandler)
@@ -180,7 +186,7 @@ func serveCustomer(customer customerProvider: () -> String) {
 }
 serveCustomer(customer: {customersInLine.remove(at: 0)})
 
-//我们通过使用@autoclosure属性来标识参数，就可以让参数自动的转换为闭包的形式。
+//在定义函数的时候，我们可以通过使用@autoclosure属性来标识参数，就可以让参数自动的转换为闭包的形式。
 func serveCustomer(customer customerProvider: @autoclosure () -> String) {
     print("Now serving \(customerProvider())!")
 }
