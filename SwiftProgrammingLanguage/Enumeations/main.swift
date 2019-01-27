@@ -21,6 +21,7 @@ enum CompassPoint {
 }
 
 //和C语言不同, Swift的枚举值不会带有默认的整型值。
+
 enum Planet {
     case Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
 }
