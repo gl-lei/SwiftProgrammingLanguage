@@ -34,7 +34,7 @@ counter.reset()
 //方法参数都有一个名称和一个参数标签，就和函数一样
 
 //MARK: - The self Property
-//类实例中都有一个隐含的属性self，它代表当前实例本身。通常情况下我们不用去写self本身，直接写属性就可以了。只有当参数的名称与属性的名称一样的时候，我们才不得不使用这种方式来区分属性和参数。
+//类型实例方法中都有一个隐含的属性self，它代表当前实例本身。通常情况下我们不用去写self本身，直接写属性就可以了。只有当参数的名称与属性的名称一样的时候，我们才不得不使用这种方式来区分属性和参数。
 struct Point {
     var x = 0.0, y = 0.0
     func isToTheRightOf(x: Double) -> Bool {
@@ -47,7 +47,7 @@ if somePoint.isToTheRightOf(x: 1.0) {
 }
 
 //MARK: - Mofifying Value Types from Within Instance Methods
-//结构体和枚举都是值类型，默认的，值类型的属性在实例方法不能被修改的。然而，如果我们想要修改的话，我们需要使用mutating来修饰方法，这样方法就可以修改属性值了。甚至可以将一个新的实例赋值给self属性，这样这个新的实例将取代旧实例。
+//结构体和枚举都是值类型，值类型的属性在实例方法内默认不能被修改的。如果想要修改的话，需要使用mutating来修饰方法，这样方法就可以修改属性值了。甚至可以将一个新的实例赋值给self属性，这样这个新的实例将取代旧实例。
 struct Point1 {
     var x = 0.0, y = 0.0
     mutating func moveBy(x deltaX: Double, y deltaY: Double) {
