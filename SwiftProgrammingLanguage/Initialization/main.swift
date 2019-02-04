@@ -66,7 +66,7 @@ let color1 = Color(white: 0.4)
 print(color.red)
 
 //MARK: - Initializer Parameters Without Argument Labels
-//如果我们不想为初始化方法的参数提供函数标签，则使用_来代替
+//如果我们不想为初始化方法的参数提供参数标签，则使用_来代替
 struct Celsius1 {
     var temperatureInCelsius: Double
     
@@ -341,7 +341,7 @@ enum TemperatureUnit {
 }
 
 //MARK: - Failable Initializers for Enumerations with Raw Values
-//在没有定义任何初始化方法前，带有原值的枚举类型会自动产生一个可失败的初始化方法：init?(rawValue:)。
+//在没有定义任何初始化方法前，带有原值的枚举会自动产生一个可失败的初始化方法：init?(rawValue:)。
 enum TemperatureTest: Character {
     case kelvin = "K", celsius = "C", fahrenheit = "F"
 }
@@ -351,7 +351,7 @@ if let t = temp {
 }
 
 //MARK: - Propagation of Initialization Failure
-//类、结构体、枚举类型的可失败的初始化方法可以在类、结构、枚举类型内部调用另外的可失败初始化方法。相同的，子类的可失败初始化方法也可以调用父类的可失败初始化方法。需要注意的是，一旦在调用过程中初始化方法失败了，则初始化结束，不会申请任何内存空间。
+//类、结构体、枚举的可失败的初始化方法可以在类、结构、枚举内部调用另外的可失败初始化方法。相同的，子类的可失败初始化方法也可以调用父类的可失败初始化方法。需要注意的是，一旦在调用过程中初始化方法失败了，则初始化结束，不会申请任何内存空间。
 //可失败初始化方法也可以调用正常的初始化方法。
 class Product {
     let name: String
@@ -412,7 +412,7 @@ class AutomaticallyNamedDocument: Document {
 }
 
 //MARK: - The init! Failable Initializer
-//我们也可以定义隐式解包的可失败初始化函数，init?和init!可以相互调用，也可以用init?来重写init!，也可以使用init来调用init!
+//我们也可以定义隐式解包的可失败初始化方法，init?和init!可以相互调用，也可以用init?来重写init!，也可以使用init来调用init!
 
 //MARK: - Required Initializers
 //我们将required关键字放在类初始化方法的前面来表明此类的子类都必须实现这个初始化方法。
