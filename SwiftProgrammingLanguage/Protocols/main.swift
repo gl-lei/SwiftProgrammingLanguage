@@ -23,7 +23,7 @@ protocol AnotherProtocol {
 }
 
 //MARK: - Method Requirements
-//协议可以要求指定的实例方法或者类型方法，让遵守协议的类实现。这些方法作为协议的一部分，但是没有实现部分。可变参数可以是可以的，但是默认值是不可以的。
+//协议可以要求指定的实例方法或者类型方法，让遵守协议的类实现。这些方法作为协议的一部分，但是没有实现部分。可变参数是可以的，但是默认值是不可以的。
 //当定义类方法时候，需要使用static前缀。(类遵循协议的时候，可以使用static或者class)
 protocol SomeProtocol1 {
     static func someTypeMethod()
