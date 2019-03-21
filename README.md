@@ -196,3 +196,8 @@ Swift编程语言翻译（4.2版本）
 3. 下标可选类型调用链：```john.residence?[0] = Room(name: "ABC")```
 4. 方法可选类型调用链：```john.residence?.address?.buildingIdentifier()?.hasPrefix("TEST")```
 5. 多重可选调用链的规则
+
+#### 第十七章：错误处理
+1. Error 协议(空协议)
+2. 通过 `throw` 来抛出错误(定义错误枚举)
+3. 错误处理的四种方式(抛、捕获、可选类型、断言)
