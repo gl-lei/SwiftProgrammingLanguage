@@ -4,7 +4,7 @@
 //
 //  Created by ggl on 2019/1/5.
 //  Copyright © 2019年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Memory Safety(4.2)
+//  SwiftProgrammingLanguage - Memory Safety(5.0)
 
 import Foundation
 

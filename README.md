@@ -1,7 +1,7 @@
 # Swift Programming Language
-The Swift Programming Language's Translation For Chinese(4.2 version)
+The Swift Programming Language's Translation For Chinese(5.0 version)
 
-Swift 编程语言翻译（4.2版本）
+Swift 编程语言翻译（5.0版本）
 
 #### 第一章：基础知识
 1. 基本类型(`Int`、`Double`、`Float`、`Bool`、`String`、`Array`、`Set`、`Dictionary`)
@@ -186,7 +186,7 @@ Swift 编程语言翻译（4.2版本）
 27. 使用闭包为存储属性提供默认值(在闭包中无法访问类中的其他属性、方法)
 
 #### 第十五章：析构方法(Deinitialization)
-1. 析构方法在类实例被销毁之前调用，使用 `deinit` 关键字
+1. 析构方法在类实例被销毁之前调用，使用 `deinit` 关键字。析构方法只能应用于类类型
 2. swift 采用自动自动引用计数的方式管理内存，我们几乎不需要在 `deinit` 方法里面编写内存释放的代码
 3. 子类会继承父类的析构方法，析构方法会自动被调用；父类的析构方法也会被自动调用；
 

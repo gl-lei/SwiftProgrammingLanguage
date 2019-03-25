@@ -4,7 +4,7 @@
 //
 //  Created by gl on 16/9/7.
 //  Copyright © 2016年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Classes and Structures(4.2)
+//  SwiftProgrammingLanguage - Classes and Structures(5.0)
 
 import Foundation
 

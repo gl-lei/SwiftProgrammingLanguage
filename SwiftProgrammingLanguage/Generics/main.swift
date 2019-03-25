@@ -4,7 +4,7 @@
 //
 //  Created by ggl on 2018/12/31.
 //  Copyright © 2018年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Generics(4.2)
+//  SwiftProgrammingLanguage - Generics(5.0)
 
 import Foundation
 

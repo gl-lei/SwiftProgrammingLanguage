@@ -4,7 +4,7 @@
 //
 //  Created by gl on 16/9/6.
 //  Copyright © 2016年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Closures(4.2)
+//  SwiftProgrammingLanguage - Closures(5.0)
 
 import Foundation
 

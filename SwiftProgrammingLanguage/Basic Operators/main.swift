@@ -4,7 +4,7 @@
 //
 //  Created by gl on 16/8/13.
 //  Copyright © 2016年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Basic Operators(4.2)
+//  SwiftProgrammingLanguage - Basic Operators(5.0)
 
 import Foundation
 

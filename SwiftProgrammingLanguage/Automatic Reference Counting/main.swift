@@ -4,7 +4,7 @@
 //
 //  Created by gl on 2017/1/22.
 //  Copyright © 2017年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Automatic Reference Counting(4.2)
+//  SwiftProgrammingLanguage - Automatic Reference Counting(5.0)
 
 import Foundation
 

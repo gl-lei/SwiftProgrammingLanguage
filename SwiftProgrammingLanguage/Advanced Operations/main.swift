@@ -4,7 +4,7 @@
 //
 //  Created by ggl on 2019/1/11.
 //  Copyright © 2019年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Advanced Operators (4.2)
+//  SwiftProgrammingLanguage - Advanced Operators (5.0)
 
 import Foundation
 

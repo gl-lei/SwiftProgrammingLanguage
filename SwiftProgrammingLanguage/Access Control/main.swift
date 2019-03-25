@@ -4,7 +4,7 @@
 //
 //  Created by ggl on 2019/1/7.
 //  Copyright © 2019年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Access Control(4.2)
+//  SwiftProgrammingLanguage - Access Control(5.0)
 
 import Foundation
 
