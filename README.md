@@ -1,7 +1,7 @@
-# SwiftProgrammingLanguage
+# Swift Programming Language
 The Swift Programming Language's Translation For Chinese(4.2 version)
 
-Swift编程语言翻译（4.2版本）
+Swift 编程语言翻译（4.2版本）
 
 #### 第一章：基础知识
 1. 基本类型(`Int`、`Double`、`Float`、`Bool`、`String`、`Array`、`Set`、`Dictionary`)
