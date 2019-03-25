@@ -131,7 +131,7 @@ j = nil
 //MARK: - Unowned References and Implicitly Unwrapped Optional Properties
 //上面Person和Apartment的例子，使用weak适用于两边的属性都可以为nil的情况；
 //上面Customer和CreditCard的例子，使用unowned适用于一边的属性为nil，另一边的属性不能为nil的情况；
-//还有第三种情景：初始化之前两边属性都为nil，初始化完成后，两边的属性拥有值；这时候就可以一边使用unowne d属性，另一边使用隐式解包属性。
+//还有第三种情景：初始化之前两边属性都为nil，初始化完成后，两边的属性拥有值；这时候就可以一边使用unowned属性，另一边使用隐式解包属性。
 class Country {
     let name: String
     var capitalCity: City!
@@ -155,7 +155,7 @@ var country = Country(name: "Canada", capitalName: "Ottawa")
 print("\(country.name)'s capital city is called \(country.capitalCity.name)")
 
 //MARK: - Strong Reference Cycles for Closures
-//闭包也会发生循环引用的原因是当赋值闭包赋值的时候，也是强引用的形式；闭包体中如果访问了self的属性或者self的方法，则会对self形成强引用。这样就形成了循环引用；
+//闭包也会发生循环引用的原因是当闭包赋值的时候，是强引用的形式；闭包体中如果访问了self的属性或者self的方法，则会对self形成强引用。这样就形成了循环引用；
 //swift通过闭包持有列表来解决这个问题（closure capture list）
 class HTMLElement {
     let name: String
