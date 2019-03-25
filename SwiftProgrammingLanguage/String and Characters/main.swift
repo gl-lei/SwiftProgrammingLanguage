@@ -4,7 +4,7 @@
 //
 //  Created by gl on 16/8/13.
 //  Copyright © 2016年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - String and Characters(4.2)
+//  SwiftProgrammingLanguage - String and Characters(5.0)
 
 import Foundation
 

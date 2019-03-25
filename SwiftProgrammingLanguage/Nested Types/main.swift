@@ -4,7 +4,7 @@
 //
 //  Created by gl on 2017/1/23.
 //  Copyright © 2017年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Nested Types(4.2)
+//  SwiftProgrammingLanguage - Nested Types(5.0)
 
 import Foundation
 

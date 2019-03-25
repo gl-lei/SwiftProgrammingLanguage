@@ -4,9 +4,11 @@
 //
 //  Created by gl on 2017/1/22.
 //  Copyright © 2017年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Deinitialization(3.0)
+//  SwiftProgrammingLanguage - Deinitialization(5.0)
 
 import Foundation
+
+//析构方法只能应用于类类型
 
 //MARK: - How Deinitialization Works
 //swift会自动释放我们不再使用的对象实例内存，不需要我们手动编写释放对象代码；

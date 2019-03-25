@@ -4,7 +4,7 @@
 //
 //  Created by gl on 16/7/5.
 //  Copyright © 2016年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - Swift Tour(4.2)
+//  SwiftProgrammingLanguage - Swift Tour(5.0)
 
 import Foundation
 

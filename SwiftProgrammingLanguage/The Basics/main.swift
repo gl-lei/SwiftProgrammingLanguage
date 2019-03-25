@@ -4,7 +4,7 @@
 //
 //  Created by gl on 16/7/6.
 //  Copyright © 2016年 gl. All rights reserved.
-//  SwiftProgrammingLanguage - The Basics(4.2)
+//  SwiftProgrammingLanguage - The Basics(5.0)
 
 import Foundation
 
