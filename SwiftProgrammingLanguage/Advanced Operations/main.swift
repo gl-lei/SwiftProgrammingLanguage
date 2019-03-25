@@ -59,7 +59,7 @@ let outputBits = firstBitsX ^ otherBitsX    // equals 00010001
 //4.符号位不变
 
 //MARK: - Overflow Operators
-//swift默认是允许值溢出的，如果值溢出的话会报错
+//swift默认是不允许值溢出的，如果值溢出的话会报错
 var potentialOverflow = Int16.max
 potentialOverflow += 1          // this causes an error
 
@@ -130,7 +130,7 @@ if twoThree == anotherTwoThree {
     print("These two vectors are equivalent.")
 }
 
-//在多数简单场景，我们可以让swift自动帮我们生成Equivalence操作方法，swift会自动为满足一下规则的类型提供相应方法实现：
+//在多数简单场景，我们可以让swift自动帮我们生成Equivalence操作方法，swift会自动为满足以下规则的类型提供相应方法实现：
 //*.结构体只存在存储属性，并且这些属性都遵循了Equatable协议；
 //*.枚举类型只存在关联类型，并且这些类型都遵循了Equatable协议；
 //*.枚举类型不存在任何关联类型

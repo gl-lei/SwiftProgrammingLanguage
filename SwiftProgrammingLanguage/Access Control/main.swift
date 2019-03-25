@@ -10,7 +10,7 @@ import Foundation
 
 //MARK: - Modules and Source Files
 //Swift的访问控制基于模块与源文件组成
-//模块是一个单独的代码发布单元-framework或者应用程序，可以被swift以import关键字；
+//模块是一个单独的代码发布单元-framework或者应用程序，可以被swift以import关键字引入；
 //Xcode中的每个target（应用程序包或者framework）在swift中都被视作一个分离的模块；如果将代码打包成framework（可能是为了封装代码以便在不同的应用程序中重用代码）在应用程序中导入或者在其他framework中使用，那么framework中的所有代码都属于模块的一部分；
 //源文件指的是模块中的一个单独的swift源代码文件。除了可以在swift源文件中定义私有类型之外，还可以定义多种类型、函数等等；
 
@@ -155,7 +155,7 @@ private var privateInstance = SomePrivateClass()
 //MARK: - Getters And Setters
 //常量、变量以及下标的Getters和Setters会自动接收与常量、变量、属性或者下标相同的访问级别。
 //我们可以给setter一个比其相应getter更低的访问级别，来限制该变量、属性或者下标的读写范围；通过在var或者subscript关键字前加上fileprivate(set)、private(set)或者internal(set)来实现setter的更低访问级别；
-//此规则适用于存储属性和计算属性。即使我们没有为存储属性编写显式的getter和setter，swift仍然为我们合成隐式的getter和setter，以提供对存储属性的后台存储变量的访问。使用fileprivate(set)、private(set)和internal(set)来改变这个自动生成的setter的访问级别，与计算属性中的显式指定setter访问级别的方式相同。
+//此规则适用于存储属性和计算属性。即使我们没有为存储属性编写显式的getter和setter，swift仍然为我们隐式的合成getter和setter，以提供对存储属性的后台存储变量的访问。使用fileprivate(set)、private(set)和internal(set)来改变这个自动生成的setter的访问级别，与计算属性中的显式指定setter访问级别的方式相同。
 struct TrackedString {
     private(set) var numberOfEdits = 0
     var value: String = "" {
@@ -189,7 +189,7 @@ public struct TrackedString {
 //与上面介绍的初始化方法规则一样，如果我们想在其他模块中使用public的结构体中的memberwise初始化方法，我们必须在类型中显式的提供拥有public访问级别的memberwise初始化方法；
 
 //MARK: - Protocols
-//如果我们想给协议类型显式的指定访问级别，那么在定义协议的时候就需要指定；这可以让协议在特定的访问级别上下文中被遵循（试用）；
+//如果我们想给协议类型显式的指定访问级别，那么在定义协议的时候就需要指定；这可以让协议在特定的访问级别上下文中被遵循（使用）；
 //协议中的每个要求的访问级别会自动的设置成与协议自身相同的访问级别。我们不能将协议要求的访问级别设置成协议自身不支持的访问级别；这确保所有的协议要求都可以在遵循协议的类型中可见；
 //如果我们定义了public访问级别的协议，则协议要求在被类型实现的时候，也必须要使用public访问级别；这点与其他的类型不同，其他类型如果是拥有public访问级别，则类型的成员的访问级别隐式是internal级别的；
 
