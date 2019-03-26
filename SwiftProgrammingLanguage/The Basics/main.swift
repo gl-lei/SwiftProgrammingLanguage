@@ -113,7 +113,7 @@ let oneMillion = 1_000_000
 //因为不同的类型不能在一起进行运算，我们可以使用SomeType(value)来进行数值类型的转换。
 let twoThousand: UInt16 = 2_000
 let one: UInt8 = 1
-let twoThousandAndOne = twoThousand + UInt16(one)   //注意UInt16(value)是调用UInt16的初始化函数来构造UInt16变量，value并不是任何类型都可以，必须是UInt16定义了此类型的初始化函数才可以。
+let twoThousandAndOne = twoThousand + UInt16(one)   //注意UInt16(value)是调用UInt16的初始化方法来构造UInt16变量，value并不是任何类型都可以，必须是UInt16定义了此类型的初始化方法才可以。
 
 //MARK: - Integer and Floating-Point Conversion
 let three = 3
@@ -122,11 +122,6 @@ let pii = Double(3) + pointOneFourOneFiveNine
 
 //浮点类型转换为整型，转换的时候总是截去小数部分而不会进位。
 let integerPi = Int(pi)
-
-//字面值本身没有隐式类型，所以3+0.123是可以在一起运算的。只有在赋值的时候，才会进行类型推断，此时字面值才会产生相应类型。
-let r = 0.12345
-let w = r + 3
-print(w)
 
 //MARK: - Type Aliases
 //使用typealias关键字来为存在的类型指定一个别名
@@ -147,9 +142,9 @@ if turnipsAreDelicious {
 
 //条件表达式不支持隐式转换
 let i = 1
-//if i {                        //这是不正确的，不能隐式转换
-//    print("hello")
-//}
+if i {                        //这是不正确的，不能隐式转换
+    print("hello")
+}
 
 if i == 1 {
     print("Hello")
@@ -217,7 +212,7 @@ if let actualNumber = Int(possibleNumber) {
     print("\'\(possibleNumber)\' could not converted to an integer.")
 }
 
-//我们可以在一条if语句里面包含多个optional binding并且还可以使用where条件来检测表达式。
+//我们可以在一条if语句里面包含多个optional binding并且还可以使用条件来检测表达式。
 if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber {
     print("\(firstNumber) < \(secondNumber).")
 }
@@ -230,7 +225,7 @@ let forcedString: String = possibleString!          //强制解包
 let assumedString: String! = "An implicitly unwrapped optional string."
 let implicitString: String = assumedString          //自动解包
 
-//我们仍然可以将隐式解包optional变量看做一个正常的optional变量来检测它是否包含有值
+//我们仍然可以将来检测它是否包含有值
 if assumedString != nil{
     print(assumedString)
 }
