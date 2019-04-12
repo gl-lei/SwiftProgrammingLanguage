@@ -142,9 +142,9 @@ if turnipsAreDelicious {
 
 //条件表达式不支持隐式转换
 let i = 1
-if i {                        //这是不正确的，不能隐式转换
-    print("hello")
-}
+//if i {                        //这是不正确的，不能隐式转换
+//    print("hello")
+//}
 
 if i == 1 {
     print("Hello")
