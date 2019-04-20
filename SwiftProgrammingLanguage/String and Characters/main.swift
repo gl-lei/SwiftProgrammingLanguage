@@ -42,6 +42,14 @@ let linesWithIndentation = """
     """
 print("lineWithIndentation" + linesWithIndentation)
 
+//MARK: - Extended String Delimiters
+//通过在字符串前后添加#分隔符，来使用字符串序列中可以直接使用特殊字符，而不用加转义符号
+let strDelimiter = #"this is very good, "GGL" is best"#
+print(strDelimiter)
+
+let strDelimiter1 = #"This is very good, \#n hahahah"#
+print(strDelimiter1)
+
 //MARK: - Initializing an Empty String
 var emptyString = ""
 var anotherEmptyString = String()
