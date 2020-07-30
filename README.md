@@ -5,36 +5,36 @@ Swift 编程语言翻译（5.0版本）
 
 这是自己在学习的时候做的官方的一些翻译笔记，以及每章知识内容总结，希望能帮助到大家。
 ### 一、目录列表
-|序号| 章节|官方文档地址||
+|序号| 章节|官方文档地址|
 |----------|-----------|----------|
 |0            | [Swift体验](./SwiftProgrammingLanguage/0.SwiftTour/main.swift) | [Swift体验](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html) |
-|1            | [基础知识](./SwiftProgrammingLanguage/1.The Basics/main.swift) | [基础知识](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#) |
-|2            | [基础运算符](./SwiftProgrammingLanguage/2.Basic Operators/main.swift) | [基础运算符](https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html) |
-|3            | [字符串与字符](./SwiftProgrammingLanguage/3.String and Characters/main.swift) | [字符串与字符](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html) |
-|4            | [容器类型](./SwiftProgrammingLanguage/4.Collection Types/main.swift) | [容器类型](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html) |
-|5            | [流程控制](./SwiftProgrammingLanguage/5.Control Flow/main.swift) | [流程控制](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html) |
+|1            | [基础知识](./SwiftProgrammingLanguage/1.TheBasics/main.swift) | [基础知识](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#) |
+|2            | [基础运算符](./SwiftProgrammingLanguage/2.BasicOperators/main.swift) | [基础运算符](https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html) |
+|3            | [字符串与字符](./SwiftProgrammingLanguage/3.StringAndCharacters/main.swift) | [字符串与字符](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html) |
+|4            | [容器类型](./SwiftProgrammingLanguage/4.CollectionTypes/main.swift) | [容器类型](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html) |
+|5            | [流程控制](./SwiftProgrammingLanguage/5.ControlFlow/main.swift) | [流程控制](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html) |
 |6            | [函数](./SwiftProgrammingLanguage/6.Functions/main.swift) | [函数](https://docs.swift.org/swift-book/LanguageGuide/Functions.html) |
 |7            | [闭包](./SwiftProgrammingLanguage/7.Closures/main.swift) | [闭包](https://docs.swift.org/swift-book/LanguageGuide/Closures.html) |
 |8            | [枚举](./SwiftProgrammingLanguage/8.Enumeations/main.swift) | [枚举](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html) |
-|9            | [结构体与类](./SwiftProgrammingLanguage/9.Classes and Structures/main.swift) | [结构体与类](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html) |
+|9            | [结构体与类](./SwiftProgrammingLanguage/9.ClassesAndStructures/main.swift) | [结构体与类](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html) |
 |10            | [属性](./SwiftProgrammingLanguage/10.Properties/main.swift) | [属性](https://docs.swift.org/swift-book/LanguageGuide/Properties.html) |
 |11            | [方法](./SwiftProgrammingLanguage/11.Methods/main.swift) | [方法](https://docs.swift.org/swift-book/LanguageGuide/Methods.html) |
 |12            | [下标](./SwiftProgrammingLanguage/12.Subscripts/main.swift) | [下标](https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html) |
-|13            | [继承](./SwiftProgrammingLanguage/3.String and Characters/main.swift) | [继承](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html) |
+|13            | [继承](./SwiftProgrammingLanguage/3.StringAndCharacters/main.swift) | [继承](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html) |
 |14            | [初始化方法](./SwiftProgrammingLanguage/14.Initialization/main.swift) | [初始化方法](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html) |
 |15            | [析构方法](./SwiftProgrammingLanguage/15.Deinitialization/main.swift) | [析构方法](https://docs.swift.org/swift-book/LanguageGuide/Deinitialization.html) |
-|16            | [可选类型调用链](./SwiftProgrammingLanguage/16.Optional Chaining/main.swift) | [可选类型调用链(](https://docs.swift.org/swift-book/LanguageGuide/OptionalChaining.html) |
-|17            | [错误处理](./SwiftProgrammingLanguage/17.Error Handling/main.swift) | [错误处理](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) |
-|18            | [类型转换](./SwiftProgrammingLanguage/18.Type Casting/main.swift) | [类型转换](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html) |
-|19            | [嵌套类型](./SwiftProgrammingLanguage/19.Nested Types/main.swift) | [嵌套类型](https://docs.swift.org/swift-book/LanguageGuide/NestedTypes.html) |
+|16            | [可选类型调用链](./SwiftProgrammingLanguage/16.OptionalChaining/main.swift) | [可选类型调用链(](https://docs.swift.org/swift-book/LanguageGuide/OptionalChaining.html) |
+|17            | [错误处理](./SwiftProgrammingLanguage/17.ErrorHandling/main.swift) | [错误处理](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) |
+|18            | [类型转换](./SwiftProgrammingLanguage/18.TypeCasting/main.swift) | [类型转换](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html) |
+|19            | [嵌套类型](./SwiftProgrammingLanguage/19.NestedTypes/main.swift) | [嵌套类型](https://docs.swift.org/swift-book/LanguageGuide/NestedTypes.html) |
 |20            | [扩展](./SwiftProgrammingLanguage/20.Extensions/main.swift) | [扩展](https://docs.swift.org/swift-book/LanguageGuide/Extensions.html) |
 |21            | [协议](./SwiftProgrammingLanguage/21.Protocols/main.swift) | [协议](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html) |
 |22            | [泛型](./SwiftProgrammingLanguage/22.Generics/main.swift) | [泛型](https://docs.swift.org/swift-book/LanguageGuide/Generics.html) |
-|23            | [不透明类型](./SwiftProgrammingLanguage/23.Opaque Types/main.swift) | [不透明类型](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html) |
-|24            | [自动引用计数](./SwiftProgrammingLanguage/24.Automatic Reference Counting/main.swift) | [自动引用计数](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html) |
-|25            | [内存安全](./SwiftProgrammingLanguage/25.Memory Safety/main.swift) | [内存安全](https://docs.swift.org/swift-book/LanguageGuide/MemorySafety.html) |
-|26            | [访问控制](./SwiftProgrammingLanguage/26.Access Control/main.swift) | [访问控制](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) |
-|27            | [高级运算](./SwiftProgrammingLanguage/27.Advanced Operations/main.swift) | [高级运算](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html) | 
+|23            | [不透明类型](./SwiftProgrammingLanguage/23.OpaqueTypes/main.swift) | [不透明类型](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html) |
+|24            | [自动引用计数](./SwiftProgrammingLanguage/24.AutomaticReferenceCounting/main.swift) | [自动引用计数](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html) |
+|25            | [内存安全](./SwiftProgrammingLanguage/25.MemorySafety/main.swift) | [内存安全](https://docs.swift.org/swift-book/LanguageGuide/MemorySafety.html) |
+|26            | [访问控制](./SwiftProgrammingLanguage/26.AccessControl/main.swift) | [访问控制](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html) |
+|27            | [高级运算](./SwiftProgrammingLanguage/27.AdvancedOperations/main.swift) | [高级运算](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html) | 
 
 
 ### 二、知识大纲总结

@@ -577,33 +577,33 @@
 				EA63C56C24D2CB49001E47A6 /* README.md */,
 				672BF17A1D2B47BE00861559 /* SwiftProgrammingLanguage */,
 				EA63C57824D2D4AE001E47A6 /* 0.SwiftTour */,
-				EA63C57B24D2D4D6001E47A6 /* 1.The Basics */,
-				EA63C57F24D2D4D6001E47A6 /* 2.Basic Operators */,
-				EA63C58924D2D4D6001E47A6 /* 3.String and Characters */,
-				EA63C57D24D2D4D6001E47A6 /* 4.Collection Types */,
-				EA63C58124D2D4D6001E47A6 /* 5.Control Flow */,
+				EA63C57B24D2D4D6001E47A6 /* 1.TheBasics */,
+				EA63C57F24D2D4D6001E47A6 /* 2.BasicOperators */,
+				EA63C58924D2D4D6001E47A6 /* 3.StringAndCharacters */,
+				EA63C57D24D2D4D6001E47A6 /* 4.CollectionTypes */,
+				EA63C58124D2D4D6001E47A6 /* 5.ControlFlow */,
 				EA63C58D24D2D4D6001E47A6 /* 6.Functions */,
 				EA63C5A924D2D4D7001E47A6 /* 7.Closures */,
 				EA63C59F24D2D4D7001E47A6 /* 8.Enumeations */,
-				EA63C5A524D2D4D7001E47A6 /* 9.Classes and Structures */,
+				EA63C5A524D2D4D7001E47A6 /* 9.ClassesAndStructures */,
 				EA63C59B24D2D4D7001E47A6 /* 10.Properties */,
 				EA63C5A124D2D4D7001E47A6 /* 11.Methods */,
 				EA63C59324D2D4D6001E47A6 /* 12.Subscripts */,
 				EA63C59724D2D4D7001E47A6 /* 13.Inheritance */,
 				EA63C58F24D2D4D6001E47A6 /* 14.Initialization */,
 				EA63C5A724D2D4D7001E47A6 /* 15.Deinitialization */,
-				EA63C5A324D2D4D7001E47A6 /* 16.Optional Chaining */,
-				EA63C59924D2D4D7001E47A6 /* 17.Error Handling */,
-				EA63C59524D2D4D6001E47A6 /* 18.Type Casting */,
-				EA63C5AB24D2D4D7001E47A6 /* 19.Nested Types */,
+				EA63C5A324D2D4D7001E47A6 /* 16.OptionalChaining */,
+				EA63C59924D2D4D7001E47A6 /* 17.ErrorHandling */,
+				EA63C59524D2D4D6001E47A6 /* 18.TypeCasting */,
+				EA63C5AB24D2D4D7001E47A6 /* 19.NestedTypes */,
 				EA63C58524D2D4D6001E47A6 /* 20.Extensions */,
 				EA63C59124D2D4D6001E47A6 /* 21.Protocols */,
 				EA63C58324D2D4D6001E47A6 /* 22.Generics */,
-				EA63C59D24D2D4D7001E47A6 /* 23.Opaque Types */,
-				EA63C58B24D2D4D6001E47A6 /* 24.Automatic Reference Counting */,
-				EA63C5AF24D2D4D7001E47A6 /* 25.Memory Safety */,
-				EA63C5AD24D2D4D7001E47A6 /* 26.Access Control */,
-				EA63C58724D2D4D6001E47A6 /* 27.Advanced Operations */,
+				EA63C59D24D2D4D7001E47A6 /* 23.OpaqueTypes */,
+				EA63C58B24D2D4D6001E47A6 /* 24.AutomaticReferenceCounting */,
+				EA63C5AF24D2D4D7001E47A6 /* 25.MemorySafety */,
+				EA63C5AD24D2D4D7001E47A6 /* 26.AccessControl */,
+				EA63C58724D2D4D6001E47A6 /* 27.AdvancedOperations */,
 				672BF1791D2B47BE00861559 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -660,36 +660,36 @@
 			path = 0.SwiftTour;
 			sourceTree = "<group>";
 		};
-		EA63C57B24D2D4D6001E47A6 /* 1.The Basics */ = {
+		EA63C57B24D2D4D6001E47A6 /* 1.TheBasics */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C57C24D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "1.The Basics";
+			path = 1.TheBasics;
 			sourceTree = "<group>";
 		};
-		EA63C57D24D2D4D6001E47A6 /* 4.Collection Types */ = {
+		EA63C57D24D2D4D6001E47A6 /* 4.CollectionTypes */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C57E24D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "4.Collection Types";
+			path = 4.CollectionTypes;
 			sourceTree = "<group>";
 		};
-		EA63C57F24D2D4D6001E47A6 /* 2.Basic Operators */ = {
+		EA63C57F24D2D4D6001E47A6 /* 2.BasicOperators */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C58024D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "2.Basic Operators";
+			path = 2.BasicOperators;
 			sourceTree = "<group>";
 		};
-		EA63C58124D2D4D6001E47A6 /* 5.Control Flow */ = {
+		EA63C58124D2D4D6001E47A6 /* 5.ControlFlow */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C58224D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "5.Control Flow";
+			path = 5.ControlFlow;
 			sourceTree = "<group>";
 		};
 		EA63C58324D2D4D6001E47A6 /* 22.Generics */ = {
@@ -708,28 +708,28 @@
 			path = 20.Extensions;
 			sourceTree = "<group>";
 		};
-		EA63C58724D2D4D6001E47A6 /* 27.Advanced Operations */ = {
+		EA63C58724D2D4D6001E47A6 /* 27.AdvancedOperations */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C58824D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "27.Advanced Operations";
+			path = 27.AdvancedOperations;
 			sourceTree = "<group>";
 		};
-		EA63C58924D2D4D6001E47A6 /* 3.String and Characters */ = {
+		EA63C58924D2D4D6001E47A6 /* 3.StringAndCharacters */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C58A24D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "3.String and Characters";
+			path = 3.StringAndCharacters;
 			sourceTree = "<group>";
 		};
-		EA63C58B24D2D4D6001E47A6 /* 24.Automatic Reference Counting */ = {
+		EA63C58B24D2D4D6001E47A6 /* 24.AutomaticReferenceCounting */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C58C24D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "24.Automatic Reference Counting";
+			path = 24.AutomaticReferenceCounting;
 			sourceTree = "<group>";
 		};
 		EA63C58D24D2D4D6001E47A6 /* 6.Functions */ = {
@@ -764,12 +764,12 @@
 			path = 12.Subscripts;
 			sourceTree = "<group>";
 		};
-		EA63C59524D2D4D6001E47A6 /* 18.Type Casting */ = {
+		EA63C59524D2D4D6001E47A6 /* 18.TypeCasting */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C59624D2D4D6001E47A6 /* main.swift */,
 			);
-			path = "18.Type Casting";
+			path = 18.TypeCasting;
 			sourceTree = "<group>";
 		};
 		EA63C59724D2D4D7001E47A6 /* 13.Inheritance */ = {
@@ -780,12 +780,12 @@
 			path = 13.Inheritance;
 			sourceTree = "<group>";
 		};
-		EA63C59924D2D4D7001E47A6 /* 17.Error Handling */ = {
+		EA63C59924D2D4D7001E47A6 /* 17.ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C59A24D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "17.Error Handling";
+			path = 17.ErrorHandling;
 			sourceTree = "<group>";
 		};
 		EA63C59B24D2D4D7001E47A6 /* 10.Properties */ = {
@@ -796,12 +796,12 @@
 			path = 10.Properties;
 			sourceTree = "<group>";
 		};
-		EA63C59D24D2D4D7001E47A6 /* 23.Opaque Types */ = {
+		EA63C59D24D2D4D7001E47A6 /* 23.OpaqueTypes */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C59E24D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "23.Opaque Types";
+			path = 23.OpaqueTypes;
 			sourceTree = "<group>";
 		};
 		EA63C59F24D2D4D7001E47A6 /* 8.Enumeations */ = {
@@ -820,20 +820,20 @@
 			path = 11.Methods;
 			sourceTree = "<group>";
 		};
-		EA63C5A324D2D4D7001E47A6 /* 16.Optional Chaining */ = {
+		EA63C5A324D2D4D7001E47A6 /* 16.OptionalChaining */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C5A424D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "16.Optional Chaining";
+			path = 16.OptionalChaining;
 			sourceTree = "<group>";
 		};
-		EA63C5A524D2D4D7001E47A6 /* 9.Classes and Structures */ = {
+		EA63C5A524D2D4D7001E47A6 /* 9.ClassesAndStructures */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C5A624D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "9.Classes and Structures";
+			path = 9.ClassesAndStructures;
 			sourceTree = "<group>";
 		};
 		EA63C5A724D2D4D7001E47A6 /* 15.Deinitialization */ = {
@@ -852,28 +852,28 @@
 			path = 7.Closures;
 			sourceTree = "<group>";
 		};
-		EA63C5AB24D2D4D7001E47A6 /* 19.Nested Types */ = {
+		EA63C5AB24D2D4D7001E47A6 /* 19.NestedTypes */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C5AC24D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "19.Nested Types";
+			path = 19.NestedTypes;
 			sourceTree = "<group>";
 		};
-		EA63C5AD24D2D4D7001E47A6 /* 26.Access Control */ = {
+		EA63C5AD24D2D4D7001E47A6 /* 26.AccessControl */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C5AE24D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "26.Access Control";
+			path = 26.AccessControl;
 			sourceTree = "<group>";
 		};
-		EA63C5AF24D2D4D7001E47A6 /* 25.Memory Safety */ = {
+		EA63C5AF24D2D4D7001E47A6 /* 25.MemorySafety */ = {
 			isa = PBXGroup;
 			children = (
 				EA63C5B024D2D4D7001E47A6 /* main.swift */,
 			);
-			path = "25.Memory Safety";
+			path = 25.MemorySafety;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
