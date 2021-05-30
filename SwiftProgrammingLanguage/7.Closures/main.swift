@@ -72,7 +72,7 @@ someFunctionThatTakesAClosure(closure: {
 })
 
 //使用Trailing Closure之后
-func someFunctionThatTakesAClosure() {
+someFunctionThatTakesAClosure() {
     //闭包代码
 }
 
